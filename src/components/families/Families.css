@@ -1,0 +1,54 @@
+.families-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 6rem;
+  width: 100%;
+  height: 45rem;
+  background: linear-gradient(81deg, #e7f0ff 9.01%, #e8f1ff78 89.11%);
+}
+
+.family-text-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.family-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.family-heading > p {
+  font-size: larger;
+  font-weight: 600;
+  color: #2aa7ff;
+}
+
+.family-heading > h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #1b3c74;
+}
+
+.family-para > p {
+  font-size: larger;
+  font-weight: 500;
+  color: #77829d;
+}
+
+.board-section {
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

@@ -1,0 +1,111 @@
+.booking-card-container {
+  width: 85%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  padding-top: 3rem;
+  gap: 1.5rem;
+}
+
+.booking-card-logo {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8ccfff;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.logo-tick {
+  position: absolute;
+  right: 0;
+  bottom: 1.5rem;
+}
+
+.booking-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.booking-card-details > h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #14bef0;
+}
+
+.booking-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+}
+
+.booking-address > h3 {
+  font-size: large;
+  font-weight: 700;
+  color: #414146;
+}
+
+.booking-address > p {
+  font-size: medium;
+  font-weight: 400;
+}
+
+.hospital-ratings {
+  width: 3.5rem;
+  height: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: #00a500;
+  border-radius: 3.5px;
+}
+
+.hospital-ratings > svg,
+.hospital-ratings > span {
+  color: white;
+}
+
+.booking-date-time {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.booking-date,
+.booking-time {
+  height: 2.5rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-time {
+  width: 5.9rem;
+  border: 1px solid #2aa7ff;
+  font-size: medium;
+  font-weight: 500;
+  color: #2aa7ff;
+}
+
+.booking-date {
+  width: 8rem;
+  border: 1px solid #00a500;
+  font-size: large;
+  font-weight: 700;
+  color: #007100;
+}

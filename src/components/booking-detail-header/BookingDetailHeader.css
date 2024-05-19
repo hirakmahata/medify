@@ -1,0 +1,75 @@
+.booking-header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.booking-blue-border {
+  width: 100%;
+  height: 7rem;
+  background: linear-gradient(91.75deg, #2aa7ff 1.4%, #0c8ce6 100.57%);
+  border-radius: 0px 0px 16px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 6rem;
+}
+
+.booking-blue-border > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.booking-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48rem;
+  border-radius: 15px;
+  padding: 1.4rem 1rem;
+  background: #ffffff;
+  box-shadow: 6px 6px 35px 0px #1028511c;
+  position: absolute;
+  top: 4rem;
+  right: 9rem;
+}
+
+.booking-search-button {
+  width: 10rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.booking-search-button > svg {
+  position: absolute;
+  transform: translateX(2rem);
+  color: white;
+}
+
+.booking-search-button > button {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  font-size: medium;
+  color: white;
+  background: #2aa8ff;
+}
+
+.booking-input-container > input {
+  width: calc(100% - 11rem);
+  padding: 0.6rem 1rem;
+  border: none;
+  outline: none;
+  font-size: larger;
+
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #abb6c7;
+}

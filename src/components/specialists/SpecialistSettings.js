@@ -1,0 +1,123 @@
+export const settings = {
+  dots: true,
+  infinite: true,
+  speed: 900,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: "260px",
+  responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "200px",
+      },
+    },
+    {
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "200px",
+      },
+    },
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "180px",
+      },
+    },
+    {
+      breakpoint: 1286,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "150px",
+      },
+    },
+    {
+      breakpoint: 1182,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "120px",
+      },
+    },
+    {
+      breakpoint: 1038,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "90px",
+      },
+    },
+    {
+      breakpoint: 995,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "30px",
+      },
+    },
+    {
+      breakpoint: 880,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "60px",
+      },
+    },
+    {
+      breakpoint: 824,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "30px",
+      },
+    },
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "10px",
+      },
+    },
+  ],
+};

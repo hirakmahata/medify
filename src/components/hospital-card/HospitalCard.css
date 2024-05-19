@@ -1,0 +1,139 @@
+.hospital-card-container {
+  width: 85%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  padding-top: 3rem;
+  gap: 1.5rem;
+}
+
+.only-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.hospital-card-logo {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8ccfff;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.tick {
+  position: absolute;
+  right: 0;
+  bottom: 1.5rem;
+}
+
+.hospital-card-button {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hospital-card-button > button {
+  width: 13.5rem;
+  height: 3rem;
+  border-radius: 4px;
+  background: #2aa7ff;
+  border: 1px solid #14bef0;
+  color: white;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hospital-card-button > p {
+  font-size: large;
+  font-weight: 500;
+  color: #01a400;
+}
+
+.hospital-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.hospital-card-details > h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #14bef0;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+}
+
+.address > h3 {
+  font-size: large;
+  font-weight: 700;
+  color: #414146;
+}
+
+.address > p {
+  font-size: medium;
+  font-weight: 400;
+}
+
+.extra-class {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.free {
+  font-size: large;
+  font-weight: 700;
+  color: #02a401;
+}
+
+.rupee {
+  font-size: large;
+  font-weight: 400;
+  color: #787887;
+  text-decoration: line-through;
+}
+
+.free-clinic {
+  font-size: large;
+  font-weight: 400;
+  color: #414146;
+}
+
+.ratings {
+  width: 3.5rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: #00a500;
+  border-radius: 3.5px;
+}
+
+.ratings > svg,
+.ratings > span {
+  color: white;
+}
+
+.card-calender {
+  display: flex;
+  flex-direction: column;
+}

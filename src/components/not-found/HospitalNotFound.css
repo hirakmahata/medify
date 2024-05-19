@@ -1,0 +1,12 @@
+.hospital-notfound-container {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: 500;
+  color: #2aa7ff;
+}

@@ -1,0 +1,276 @@
+.search-box-container {
+  position: absolute;
+  width: calc(100% - 12rem);
+  top: 35rem;
+  left: 6rem;
+  border-radius: 15px;
+  padding: 3rem;
+  background: #ffffff;
+  box-shadow: 6px 6px 35px 0px #1028511c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.more-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.inputs-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inputs {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-button {
+  width: 20%;
+}
+
+.inputs > div {
+  width: 20rem;
+}
+
+.state,
+.city,
+.search-button {
+  display: flex;
+  align-items: center;
+}
+
+.search-button > svg,
+.state > svg,
+.city > svg {
+  position: absolute;
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+.inputs > div > svg {
+  color: #9ca3af;
+}
+
+.search-button {
+  width: 7rem;
+  height: 2.5rem;
+}
+
+.search-button > button {
+  width: 100%;
+  height: 100%;
+  background: #2aa8ff;
+  color: white;
+  font-size: medium;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button > svg {
+  color: white;
+}
+
+.search-box-heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #102851;
+}
+
+.more {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.myIcon {
+  width: 12rem;
+  height: 7rem;
+  border-radius: 5px;
+  background: #fafbfe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.myIcon > svg {
+  color: #2aa7ff;
+}
+
+.myIcon > p {
+  font-size: medium;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #abb6c7;
+}
+
+.active {
+  background: #2aa7ff14;
+  border: 1px solid #2aa7ff;
+}
+
+.active > p {
+  font-size: large;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2aa7ff;
+}
+
+@media screen and (max-width: 1340px) {
+  .search-box-container {
+    top: 30rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .myIcon {
+    width: 10rem;
+    height: 6rem;
+    gap: 0;
+  }
+
+  .myIcon > svg {
+    width: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .search-box-container {
+    top: 28rem;
+    left: 4rem;
+  }
+  .search-box-container {
+    gap: 2rem;
+    width: calc(100% - 8rem);
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .search-box-container {
+    top: 25rem;
+    left: 3rem;
+    width: calc(100% - 6rem);
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .state,
+  .city {
+    width: 30%;
+  }
+
+  .search-box-container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .inputs-button {
+    gap: 1rem;
+  }
+  .inputs {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .myIcon {
+    width: 8rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .search-box-container {
+    top: 23rem;
+    left: 2rem;
+    width: calc(100% - 4rem);
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .search-box-container {
+    top: 21rem;
+    left: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .myIcon {
+    width: 7rem;
+  }
+
+  .myIcon > p {
+    font-size: small;
+  }
+
+  .myIcon > svg {
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search-box-container {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .search-box-container {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .search-box-container {
+    top: 19rem;
+  }
+  .inputs {
+    width: 100%;
+  }
+  .search-button {
+    width: 100%;
+  }
+
+  .search-button > button {
+    font-size: large;
+  }
+
+  .search-button > svg {
+    width: unset;
+    transform: translateX(38vw);
+  }
+
+  .inputs-button {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myIcon {
+    width: 5rem;
+    height: 3rem;
+  }
+  .myIcon > svg {
+    width: 1.2rem;
+  }
+  .myIcon > p {
+    font-size: x-small;
+  }
+}
