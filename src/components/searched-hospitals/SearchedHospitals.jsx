@@ -8,9 +8,9 @@ const HospitalNotFound = lazy(() => import("../not-found/HospitalNotFound"));
 import Skeleton from "../skeleton/Skeleton";
 
 const SearchedHospitals = () => {
-  const medicalCenters = useSelector((state) => state.reducer.medicalCenters);
-  const selectedState = useSelector((state) => state.reducer.selectedState);
-  const selectedCity = useSelector((state) => state.reducer.selectedCity);
+  const medicalCenters = useSelector((state) => state.medicalCenters);
+  const selectedState = useSelector((state) => state.selectedState);
+  const selectedCity = useSelector((state) => state.selectedCity);
 
   return (
     <Suspense fallback={<Skeleton width="100vw" length={10} />}>

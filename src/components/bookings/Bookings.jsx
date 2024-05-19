@@ -9,7 +9,7 @@ const HospitalNotFound = lazy(() => import("../not-found/HospitalNotFound"));
 
 const Bookings = () => {
   const dispatch = useDispatch();
-  const myBookings = useSelector((state) => state.reducer.myBookings);
+  const myBookings = useSelector((state) => state.myBookings);
 
   useEffect(() => {
     dispatch(removeExpiredBookings());

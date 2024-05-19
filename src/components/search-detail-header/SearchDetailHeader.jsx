@@ -53,8 +53,8 @@ const SearchDetailHeader = ({ setIsLoading }) => {
   const { data: states, error: statesError } = useFetchStatesQuery();
 
   const [searchClicked, setSearchClicked] = useState(false);
-  const selectedState = useSelector((state) => state.reducer.selectedState);
-  const selectedCity = useSelector((state) => state.reducer.selectedCity);
+  const selectedState = useSelector((state) => state.selectedState);
+  const selectedCity = useSelector((state) => state.selectedCity);
 
   const { data: cities, error: citiesError } = useFetchCitiesQuery(
     selectedState?.value || "",
