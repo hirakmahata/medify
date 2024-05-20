@@ -25,7 +25,7 @@ const Faq = () => {
               <img src={happy} alt="happy-svg" />
             </div>
             <div className="happy-patients-number-text">
-              <h1>84+</h1>
+              <h1>84k+</h1>
               <p>Happy Patients</p>
             </div>
           </div>

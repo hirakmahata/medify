@@ -96,8 +96,8 @@
   padding: 1rem;
 }
 
-.happy-patients-number > img {
-  height: 2rem;
+.happy-image > img {
+  height: 3rem;
   text-align: center;
 }
 
@@ -129,4 +129,141 @@
   position: absolute;
   top: 30%;
   right: 1rem;
+}
+
+@media screen and (max-width: 1580px) {
+  .question {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1425px) {
+  .question {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .question {
+    width: 90%;
+  }
+
+  .images > img {
+    width: 30rem;
+  }
+
+  .faq-container {
+    gap: 1rem;
+    padding: 2rem 2rem;
+  }
+
+  .faq-images-questions {
+    gap: 1rem;
+  }
+
+  .questions {
+    width: 60%;
+  }
+
+  .images {
+    width: 40%;
+  }
+
+  .happy-patients-number {
+    left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .happy-patients-number {
+    left: 0;
+  }
+
+  .faq-container {
+    padding: 1rem 0;
+    gap: 0;
+  }
+
+  .images > img {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .faq-heading > h1 {
+    font-size: 2rem;
+  }
+
+  .question > p {
+    font-size: large;
+  }
+
+  .support {
+    right: 0.5rem;
+  }
+
+  .happy-patients-number {
+    width: 12rem;
+    padding: 0;
+  }
+
+  .happy-image > img {
+    height: 2rem;
+  }
+
+  .happy-patients-number-text > h1 {
+    font-size: 1.3rem;
+  }
+
+  .happy-patients-number-text > p {
+    font-size: small;
+  }
+
+  .question {
+    width: 100%;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .faq-images-questions {
+    gap: 0;
+  }
+  .questions {
+    gap: 2.5rem;
+  }
+
+  .images > img {
+    width: 20rem;
+  }
+
+  .question > p {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .faq-images-questions {
+    flex-direction: column;
+  }
+
+  .questions {
+    width: 100%;
+  }
+
+  .images {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .question {
+    padding: 0 1.5rem;
+  }
+
+  .support {
+    right: calc(50% - 10rem);
+  }
+
+  .happy-patients-number {
+    left: calc(50% - 15rem);
+  }
 }

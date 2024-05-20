@@ -183,6 +183,7 @@
 
   .caring-para > p {
     font-size: small;
+    line-height: 1.3rem;
   }
 
   .points > p {
@@ -234,7 +235,7 @@
 
   .sub-heading {
     font-size: small;
-    top: 5rem;
+    top: 7rem;
   }
 
   .caring-texts {
@@ -260,7 +261,80 @@
 }
 
 @media screen and (max-width: 920px) {
-  /* .caring-container {
-    flex-direction: column;
-  } */
+  .consultation-container {
+    gap: 0.2rem;
+    right: 2rem;
+    top: 21rem;
+    width: 13rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .caring-container {
+    padding: 1rem 2rem;
+  }
+
+  .sub-heading {
+    top: 9rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .caring-images > img {
+    height: 7rem;
+  }
+
+  .top-image {
+    top: 10rem;
+  }
+
+  .bottom-image {
+    top: 14rem;
+  }
+
+  .caring-container {
+    padding: 0;
+  }
+
+  .sub-heading {
+    top: 10rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .caring-container {
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+
+  .sub-heading {
+    position: static;
+  }
+
+  .caring-texts {
+    width: 100%;
+    padding: 0 3rem;
+  }
+
+  .caring-images {
+    height: 50%;
+    width: 100%;
+  }
+
+  .caring-images > img {
+    height: 10rem;
+  }
+
+  .top-image {
+    top: 2rem;
+    left: 5rem;
+  }
+
+  .bottom-image {
+    top: 8rem;
+    left: 12rem;
+  }
+
+  .consultation-container {
+    top: 3rem;
+    left: 15rem;
+  }
 }

@@ -59,3 +59,90 @@
   font-size: medium;
   font-weight: 600;
 }
+
+@media screen and (max-width: 1111px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    gap: 0rem;
+  }
+
+  .description > p {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .card-container {
+    width: 15rem;
+  }
+
+  .description > p {
+    font-size: small;
+  }
+
+  .topic {
+    font-size: medium;
+  }
+
+  .date {
+    font-size: small;
+  }
+
+  .userName {
+    font-size: small;
+  }
+
+  .avatar {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .topic-date,
+  .user {
+    gap: 0.5rem;
+  }
+
+  .text-section {
+    gap: 0.2rem;
+    padding: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .card-container {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .card-container {
+    width: 10rem;
+  }
+
+  .topic {
+    font-size: small;
+  }
+
+  .date {
+    font-size: x-small;
+  }
+
+  .description > p {
+    font-size: x-small;
+  }
+
+  .userName {
+    font-size: x-small;
+    font-weight: 500;
+  }
+
+  .card-container {
+    gap: 0;
+  }
+
+  .text-section {
+    gap: 0.1rem;
+  }
+}
