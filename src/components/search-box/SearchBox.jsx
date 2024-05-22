@@ -86,6 +86,14 @@ const SearchBox = () => {
     }
   );
 
+  console.log("states", states);
+  console.log("statesError", statesError);
+  console.log("searchClicked", searchClicked);
+  console.log("cities", cities);
+  console.log("citiesError", citiesError);
+  console.log("selectedState", selectedState);
+  console.log("selectedCity", selectedCity);
+
   const handleStateChange = (selectedOption) => {
     dispatch(setSelectedState(selectedOption));
     dispatch(setSelectedCity(null));
