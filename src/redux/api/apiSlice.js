@@ -12,21 +12,13 @@ export const medDataApi = createApi({
     }),
     fetchCities: builder.query({
       query: (state) => `/cities/${state}`,
-      providesTags: (result, error, args) => {
-        if (args.state) {
-          return ["Cities", args.state];
-        }
-        return [];
-      },
+      providesTags: (result, error, state) => [{ type: "Cities", id: state }],
     }),
     fetchMedicalCenters: builder.query({
       query: ({ state, city }) => `/data?state=${state}&city=${city}`,
-      providesTags: (result, error, args) => {
-        if (result) {
-          return ["MedicalCenters", args.city];
-        }
-        return ["MedicalCenters"];
-      },
+      providesTags: (result, error, { state, city }) => [
+        { type: "MedicalCenters", id: `${state}-${city}` },
+      ],
     }),
   }),
 });

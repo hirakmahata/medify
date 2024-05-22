@@ -159,6 +159,7 @@ const SearchBox = () => {
               isSearchable
               noOptionsMessage={() => "No City Found"}
               styles={STYLES}
+              isDisabled={!selectedState}
             />
           </div>
         </div>
