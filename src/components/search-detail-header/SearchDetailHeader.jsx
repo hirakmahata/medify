@@ -157,7 +157,6 @@ const SearchDetailHeader = ({ setIsLoading, setAlreadySearched }) => {
             isSearchable
             noOptionsMessage={() => "No City Found"}
             styles={STYLES}
-            isDisabled={!selectedState}
           />
         </div>
         <div onClick={handleSearch} className="search-button-details">
