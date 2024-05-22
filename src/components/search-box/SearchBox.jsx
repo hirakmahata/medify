@@ -68,7 +68,7 @@ const SearchBox = () => {
   const selectedCity = useSelector((state) => state.selectedCity);
 
   const { data: cities, error: citiesError } = useFetchCitiesQuery(
-    selectedState?.value || "",
+    selectedState?.value,
     {
       skip: !selectedState,
       refetchOnMountOrArgChange: true,
@@ -79,7 +79,7 @@ const SearchBox = () => {
     isLoading: medicalCentersLoading,
     error: medicalCentersError,
   } = useFetchMedicalCentersQuery(
-    { state: selectedState?.value || "", city: selectedCity?.value || "" },
+    { state: selectedState?.value, city: selectedCity?.value },
     {
       skip: !selectedCity || !searchClicked,
       refetchOnMountOrArgChange: true,
