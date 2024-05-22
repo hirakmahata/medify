@@ -59,6 +59,7 @@ const SearchBox = () => {
   const { enqueueSnackbar } = useSnackbar();
 
   const [active, setActive] = useState(null);
+  const [cityButtonActive, setCityButtonActive] = useState(false);
 
   const dispatch = useDispatch();
   const { data: states, error: statesError } = useFetchStatesQuery();
@@ -132,6 +133,14 @@ const SearchBox = () => {
   }, [dispatch, medicalCenters, navigate]);
 
   useEffect(() => {
+    if (selectedState) {
+      setCityButtonActive(true);
+    } else {
+      setCityButtonActive(false);
+    }
+  }, [selectedState]);
+
+  useEffect(() => {
     if (statesError || citiesError || medicalCentersError) {
       enqueueSnackbar("Internal Server Error", getOptionByVarient("error"));
     }
@@ -167,7 +176,7 @@ const SearchBox = () => {
               isSearchable
               noOptionsMessage={() => "No City Found"}
               styles={STYLES}
-              isDisabled={!selectedState}
+              isDisabled={!cityButtonActive}
             />
           </div>
         </div>
