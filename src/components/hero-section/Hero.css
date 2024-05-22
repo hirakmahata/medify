@@ -179,3 +179,29 @@
     width: 13rem;
   }
 }
+
+@media screen and (max-width: 431px) {
+  .hero-container {
+    padding: 0.5rem 0.5rem;
+    padding-bottom: 9rem;
+  }
+
+  .top-hero-text {
+    font-size: x-small;
+  }
+
+  .middle-hero-text > span {
+    font-size: larger;
+    font-weight: 600;
+  }
+
+  .bottom-hero-text {
+    font-size: xx-small;
+  }
+
+  .hero-button > button {
+    border-radius: 4px;
+    width: 7rem;
+    font-size: x-small;
+  }
+}

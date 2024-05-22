@@ -137,3 +137,177 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 1560px) {
+  .hospital-card-container {
+    width: 100%;
+  }
+
+  .only-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hospital-card-details > h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .hospital-card-details > h1 {
+    font-size: 1.3rem;
+  }
+
+  .address > h3 {
+    font-size: medium;
+  }
+
+  .hospital-card-logo {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
+  .hos-logo {
+    width: 3rem;
+  }
+
+  .hospital-card-button {
+    gap: 0.5rem;
+  }
+
+  .hospital-card-button > button {
+    width: 10.5rem;
+    height: 2.5rem;
+    font-size: small;
+  }
+
+  .hospital-card-button > p {
+    font-size: medium;
+  }
+
+  .tick {
+    bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .hospital-card-container {
+    padding: 2rem 1rem;
+    padding-top: 3rem;
+  }
+
+  .extra-class > span {
+    font-size: medium;
+  }
+
+  .only-card {
+    gap: 1rem;
+  }
+
+  .address > p {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hos-logo {
+    width: 2.1rem;
+  }
+
+  .hospital-card-logo {
+    height: 4.1rem;
+    width: 4.1rem;
+  }
+
+  .hospital-card-details > h1 {
+    font-size: large;
+  }
+
+  .tick {
+    bottom: 0.5rem;
+  }
+
+  .address > h3 {
+    font-size: small;
+  }
+
+  .extra-class > span {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .hospital-card-container {
+    padding: 2rem 0.5rem;
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hos-logo {
+    width: 1.6rem;
+  }
+
+  .hospital-card-logo {
+    height: 3rem;
+    width: 3rem;
+  }
+  .tick {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  .hospital-card-details > h1 {
+    font-size: medium;
+  }
+
+  .address > h3 {
+    font-size: x-small;
+  }
+
+  .address > p {
+    font-size: small;
+  }
+
+  .extra-class > span {
+    font-size: x-small;
+  }
+
+  .hospital-card-button > p {
+    font-size: small;
+  }
+
+  .hospital-card-button > button {
+    width: 8.5rem;
+    height: 2.2rem;
+    font-size: x-small;
+  }
+
+  .ratings {
+    width: 2.5rem;
+    height: 1.5rem;
+    gap: 0.2rem;
+  }
+
+  .ratings > svg {
+    width: 0.9rem;
+  }
+  .ratings > span {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .only-card {
+    flex-direction: column;
+  }
+  .hospital-card-logo {
+    display: none;
+  }
+  .hospital-card-details {
+    width: 100%;
+  }
+}

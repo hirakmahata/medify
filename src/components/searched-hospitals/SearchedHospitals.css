@@ -78,3 +78,37 @@
   color: #02706b;
   font-weight: lighter;
 }
+
+@media screen and (max-width: 1560px) {
+  .hospitals {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .ad-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hospitals-container {
+    padding: 8rem 2rem;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .hospitals-text > h1 {
+    font-size: 1.2rem;
+  }
+
+  .bottom-text > p {
+    font-size: small;
+  }
+
+  .hospitals-container {
+    padding: 8rem 0.5rem;
+    padding-top: 0;
+  }
+}

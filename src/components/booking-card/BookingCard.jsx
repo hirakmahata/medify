@@ -15,7 +15,7 @@ const BookingCard = ({
   return (
     <div className="booking-card-container">
       <div className="booking-card-logo">
-        <img src={hospitalLogo} alt="hospital" />
+        <img src={hospitalLogo} alt="hospital" className="book-hos-logo" />
         <img src={tickLogo} alt="hospitalverified" className="logo-tick" />
       </div>
       <div className="booking-card-details">

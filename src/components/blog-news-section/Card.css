@@ -39,6 +39,9 @@
 }
 
 .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
@@ -144,5 +147,33 @@
 
   .text-section {
     gap: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .card-container {
+    width: 8rem;
+  }
+
+  .topic {
+    font-size: x-small;
+  }
+
+  .date {
+    font-size: xx-small;
+  }
+
+  .description > p {
+    font-size: xx-small;
+  }
+
+  .userName {
+    font-size: xx-small;
+    font-weight: 400;
+  }
+
+  .avatar {
+    height: 0.7rem;
+    width: 0.7rem;
   }
 }

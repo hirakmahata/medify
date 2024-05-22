@@ -22,7 +22,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 import { getOptionByVarient } from "../../utils/DateFunctions";
 
-const SearchDetailHeader = ({ setIsLoading }) => {
+const SearchDetailHeader = ({ setIsLoading, setAlreadySearched }) => {
   const STYLES = {
     dropdownIndicator: () => ({
       display: "none",
@@ -123,6 +123,10 @@ const SearchDetailHeader = ({ setIsLoading }) => {
     setIsLoading(medicalCentersLoading);
   }, [medicalCentersLoading, setIsLoading]);
 
+  useEffect(() => {
+    setAlreadySearched(searchClicked);
+  }, [searchClicked, setAlreadySearched]);
+
   return (
     <div className="search-header-cotainer">
       <div className="blue-border"></div>
@@ -167,6 +171,7 @@ const SearchDetailHeader = ({ setIsLoading }) => {
 
 SearchDetailHeader.propTypes = {
   setIsLoading: PropTypes.func.isRequired,
+  setAlreadySearched: PropTypes.func.isRequired,
 };
 
 export default SearchDetailHeader;

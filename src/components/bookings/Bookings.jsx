@@ -1,26 +1,33 @@
 import "./Bookings.css";
 import { Suspense, lazy, useEffect } from "react";
 import ad from "../../assets/ad/ad.svg";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { removeExpiredBookings } from "../../redux/reducers/reducer";
 import Skeleton from "../skeleton/Skeleton";
+import {
+  getBookingsFromLocalStorage,
+  updateBookingsInLocalStorage,
+} from "../../utils/DateFunctions";
 const BookingCard = lazy(() => import("../booking-card/BookingCard"));
 const HospitalNotFound = lazy(() => import("../not-found/HospitalNotFound"));
 
 const Bookings = () => {
   const dispatch = useDispatch();
-  const myBookings = useSelector((state) => state.myBookings);
+  const freshBookings = getBookingsFromLocalStorage("my-bookings");
 
   useEffect(() => {
     dispatch(removeExpiredBookings());
-  }, [dispatch]);
+    if (freshBookings) {
+      updateBookingsInLocalStorage("my-bookings", freshBookings);
+    }
+  }, [dispatch, freshBookings]);
 
   return (
     <Suspense fallback={<Skeleton width="100vw" length={10} />}>
       <div className="bookings-container">
-        {myBookings.length > 0 ? (
+        {freshBookings ? (
           <div className="bookings">
-            {myBookings?.map((booking) => (
+            {freshBookings?.map((booking) => (
               <BookingCard
                 key={booking.hospitalID}
                 hospitalName={booking.hospitalName}

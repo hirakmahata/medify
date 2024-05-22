@@ -18,7 +18,7 @@ const HospitalCard = ({
     <div className="hospital-card-container">
       <div className="only-card">
         <div className="hospital-card-logo">
-          <img src={hospitalLogo} alt="hospital" />
+          <img src={hospitalLogo} alt="hospital" className="hos-logo" />
           <img src={tickLogo} alt="hospitalverified" className="tick" />
         </div>
         <div className="hospital-card-details">
@@ -39,7 +39,7 @@ const HospitalCard = ({
         </div>
         <div className="hospital-card-button">
           <p>Available today</p>
-          <button onClick={() => setOpenCalender(true)}>
+          <button onClick={() => setOpenCalender((prev) => !prev)}>
             Book FREE Center Visit
           </button>
         </div>

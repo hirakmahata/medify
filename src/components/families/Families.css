@@ -143,3 +143,28 @@
     height: 25rem;
   }
 }
+
+@media screen and (max-width: 431px) {
+  .family-heading > h1 {
+    font-size: xx-large;
+  }
+
+  .family-heading > p {
+    font-size: x-small;
+  }
+
+  .family-heading {
+    gap: 0rem;
+  }
+
+  .family-para > p {
+    font-size: x-small;
+  }
+  .families-container {
+    gap: 0;
+  }
+
+  .family-text-section {
+    padding-left: 0.8rem;
+  }
+}

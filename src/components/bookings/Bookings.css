@@ -33,3 +33,33 @@
 .booking-ad-card > img {
   width: 100%;
 }
+
+@media screen and (max-width: 1600px) {
+  .bookings {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .booking-ad-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .bookings-container {
+    padding: 8rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bookings-container {
+    padding: 8rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .bookings-container {
+    padding: 4rem 0.5rem;
+  }
+}

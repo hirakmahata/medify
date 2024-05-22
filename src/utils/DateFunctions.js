@@ -128,3 +128,48 @@ export const getOptionByVarient = (myVarient) => ({
     horizontal: "center",
   },
 });
+
+export const getFreshBookingsOnly = (bookings) => {
+  return bookings?.filter(
+    (booking) =>
+      isTimeExpired(`${booking.bookingDay} ${booking.bookingTime}`) === false
+  );
+};
+
+export const getBookingsFromLocalStorage = (key) => {
+  const storedValue = localStorage.getItem(key);
+  if (storedValue) {
+    return getFreshBookingsOnly(JSON.parse(storedValue));
+  }
+  return false;
+};
+
+export const deleteBookingFromLocalStorage = (key) => {
+  localStorage.removeItem(key);
+};
+
+export const addMyBookingToLocalStorage = (key, booking) => {
+  const previousBookings = getBookingsFromLocalStorage(key);
+  if (previousBookings) {
+    const existingBooking = previousBookings.find(
+      (oldBooking) => oldBooking.hospitalID === booking.hospitalID
+    );
+    if (existingBooking) {
+      Object.assign(existingBooking, booking);
+    } else {
+      previousBookings.push(booking);
+    }
+    deleteBookingFromLocalStorage(key);
+    localStorage.setItem(key, JSON.stringify(previousBookings));
+  } else {
+    localStorage.setItem(key, JSON.stringify([booking]));
+  }
+};
+
+export const updateBookingsInLocalStorage = (key, data) => {
+  const previousValue = localStorage.getItem(key);
+  if (previousValue) {
+    localStorage.removeItem(key);
+  }
+  localStorage.setItem(key, JSON.stringify(data));
+};

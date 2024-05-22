@@ -58,3 +58,10 @@
     height: 8rem;
   }
 }
+
+@media screen and (max-width: 431px) {
+  .slide > img {
+    width: 14rem;
+    height: 7.5rem;
+  }
+}

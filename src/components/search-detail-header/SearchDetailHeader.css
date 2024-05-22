@@ -79,3 +79,48 @@
 .search-button-details > svg {
   color: white;
 }
+
+@media screen and (max-width: 1385px) {
+  .search-city {
+    width: 22rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .search-inputs-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    top: 4rem;
+  }
+
+  .search-state,
+  .search-city,
+  .search-button-details {
+    width: 100%;
+  }
+
+  .blue-border {
+    height: 13rem;
+  }
+
+  .search-button-details > svg {
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .search-inputs-container {
+    width: calc(100% - 4rem);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .search-inputs-container {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-inputs-container {
+    padding: 1.5rem 1rem;
+  }
+}

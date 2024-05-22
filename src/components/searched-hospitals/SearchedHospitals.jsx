@@ -1,5 +1,6 @@
 import "./SearchedHospitals.css";
 import { Suspense, lazy } from "react";
+import PropTypes from "prop-types";
 import { SiTicktick } from "react-icons/si";
 import { useSelector } from "react-redux";
 import ad from "../../assets/ad/ad.svg";
@@ -7,7 +8,7 @@ const HospitalCard = lazy(() => import("../hospital-card/HospitalCard"));
 const HospitalNotFound = lazy(() => import("../not-found/HospitalNotFound"));
 import Skeleton from "../skeleton/Skeleton";
 
-const SearchedHospitals = () => {
+const SearchedHospitals = ({ alreadySearched }) => {
   const medicalCenters = useSelector((state) => state.medicalCenters);
   const selectedState = useSelector((state) => state.selectedState);
   const selectedCity = useSelector((state) => state.selectedCity);
@@ -16,12 +17,14 @@ const SearchedHospitals = () => {
     <Suspense fallback={<Skeleton width="100vw" length={10} />}>
       <div className="hospitals-container">
         <div className="hospitals-text">
-          {medicalCenters && medicalCenters?.length > 0 ? (
+          {medicalCenters &&
+          medicalCenters?.length > 0 &&
+          selectedCity &&
+          selectedState &&
+          alreadySearched ? (
             <h1>{`${medicalCenters?.length} medical centers available in ${selectedCity?.value}, ${selectedState?.value}`}</h1>
           ) : (
-            <h1 className="not-found-class">
-              No Medical Center found. Search to get Results
-            </h1>
+            <h1 className="not-found-class">Search to get more Results...</h1>
           )}
           <div className="bottom-text">
             <SiTicktick />
@@ -49,7 +52,7 @@ const SearchedHospitals = () => {
               ))}
             </div>
           ) : (
-            <HospitalNotFound text="No Hospital Found. Search to get Results" />
+            <HospitalNotFound text="No Hospital Found. Search to get Results..." />
           )}
           <div className="ad-section">
             <div className="ad-card">
@@ -60,6 +63,10 @@ const SearchedHospitals = () => {
       </div>
     </Suspense>
   );
+};
+
+SearchedHospitals.propTypes = {
+  alreadySearched: PropTypes.bool.isRequired,
 };
 
 export default SearchedHospitals;

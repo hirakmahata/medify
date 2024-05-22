@@ -338,3 +338,24 @@
     left: 15rem;
   }
 }
+
+@media screen and (max-width: 431px) {
+  .caring-texts {
+    padding: 0 1rem;
+  }
+
+  .top-image {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .bottom-image {
+    top: 8rem;
+    left: 7rem;
+  }
+
+  .consultation-container {
+    top: 2rem;
+    left: 12rem;
+  }
+}

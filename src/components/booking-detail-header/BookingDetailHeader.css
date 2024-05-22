@@ -12,7 +12,6 @@
   height: 7rem;
   background: linear-gradient(91.75deg, #2aa7ff 1.4%, #0c8ce6 100.57%);
   border-radius: 0px 0px 16px 16px;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -68,8 +67,109 @@
   border: none;
   outline: none;
   font-size: larger;
-
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #abb6c7;
+}
+
+@media screen and (max-width: 1380px) {
+  .booking-input-container {
+    right: 5rem;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .booking-input-container {
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .booking-input-container {
+    right: 1rem;
+    width: 40rem;
+    padding: 1.1rem 1rem;
+  }
+  .booking-blue-border {
+    padding-left: 1rem;
+  }
+
+  .booking-blue-border > h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .booking-input-container {
+    width: 32rem;
+    padding: 1rem 1rem;
+  }
+  .booking-input-container > input {
+    font-size: large;
+  }
+
+  .booking-blue-border > h1 {
+    font-size: 2rem;
+  }
+
+  .booking-search-button {
+    width: 7.5rem;
+    height: 2.4rem;
+  }
+
+  .booking-search-button > svg {
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .booking-input-container {
+    width: 25rem;
+    padding: 0.9rem 1rem;
+    top: 3rem;
+  }
+  .booking-input-container > input {
+    font-size: medium;
+  }
+
+  .booking-blue-border > h1 {
+    font-size: x-large;
+  }
+
+  .booking-search-button {
+    width: 7rem;
+    height: 2.3rem;
+  }
+
+  .booking-blue-border {
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .booking-input-container {
+    width: 95%;
+    top: 5rem;
+  }
+
+  .booking-blue-border {
+    height: 10rem;
+  }
+
+  .booking-blue-border > h1 {
+    font-size: xx-large;
+  }
+
+  .booking-blue-border {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .booking-input-container > input {
+    width: calc(100% - 7rem);
+    padding: 0.3rem 0.4rem;
+  }
 }

@@ -10,11 +10,15 @@ const Faq = lazy(() => import("../../components/FAQ-section/Faq"));
 
 const SearchDetails = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [alreadySearched, setAlreadySearched] = useState(false);
   return (
     <Suspense fallback={<Skeleton width="100vw" length={10} />}>
-      <SearchDetailHeader setIsLoading={setIsLoading} />
+      <SearchDetailHeader
+        setIsLoading={setIsLoading}
+        setAlreadySearched={setAlreadySearched}
+      />
       {!isLoading ? (
-        <SearchedHospitals />
+        <SearchedHospitals alreadySearched={alreadySearched} />
       ) : (
         <Skeleton width="100vw" length={10} />
       )}

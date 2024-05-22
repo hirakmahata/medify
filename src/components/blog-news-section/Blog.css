@@ -68,3 +68,19 @@
     font-size: medium;
   }
 }
+
+@media screen and (max-width: 431px) {
+  .headings > h1 {
+    font-size: x-large;
+  }
+  .headings > p {
+    font-size: small;
+  }
+  .blog-container {
+    gap: 0.5rem;
+  }
+
+  .cards {
+    gap: 0.5rem;
+  }
+}

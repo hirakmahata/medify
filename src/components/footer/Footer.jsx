@@ -15,7 +15,7 @@ const Footer = () => {
     <FaYoutube key={Date.now()} size={20} />,
     <FaPinterest key={Date.now()} size={20} />,
   ];
-  const footerTexts = [
+  let footerTexts = [
     "About Us",
     "Our Pricing",
     "Our Gallery",

@@ -27,3 +27,23 @@
     transform: translateX(-100%);
   }
 }
+
+@media screen and (max-width: 431px) {
+  .top-bar-text > span {
+    font-size: medium;
+  }
+
+  .top-bar {
+    padding: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 911px) {
+  .top-bar-text > span {
+    font-size: small;
+  }
+
+  .top-bar {
+    padding: 0.3rem 0;
+  }
+}

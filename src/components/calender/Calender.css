@@ -154,3 +154,50 @@
   font-size: larger;
   letter-spacing: 0.03em;
 }
+
+@media screen and (max-width: 620px) {
+  .single-slot {
+    font-size: small;
+    width: 4rem;
+    height: 1.9rem;
+  }
+
+  .morning-slots-container > p,
+  .afternoon-slots-container > p,
+  .evening-slots-container > p {
+    font-size: small;
+  }
+
+  .booking-submit {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .slots-container {
+    padding: 0 0.5rem;
+  }
+
+  .morning-slots-container,
+  .afternoon-slots-container,
+  .evening-slots-container {
+    gap: 0.5rem;
+  }
+
+  .morning-slots-container > p,
+  .afternoon-slots-container > p,
+  .evening-slots-container > p {
+    font-size: x-small;
+  }
+
+  .single-slot {
+    font-size: x-small;
+    width: 3.5rem;
+    height: 1.6rem;
+  }
+
+  .booking-submit {
+    font-size: medium;
+    height: 2.5rem;
+  }
+}

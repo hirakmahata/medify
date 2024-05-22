@@ -102,11 +102,14 @@
   height: 3rem;
   border-radius: 8px;
   background: #2aa8ff;
-  font-family: Poppins;
-  font-size: 16px;
+  font-size: large;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+
+.mobile-button {
+  display: none;
 }
 
 .play-stores {
@@ -122,4 +125,262 @@
 .play-stores > img {
   width: 13rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1180px) {
+  .mobile {
+    width: 15rem;
+  }
+
+  .get-app-images {
+    overflow-y: hidden;
+  }
+
+  .cover1 {
+    bottom: 0;
+    right: 4rem;
+  }
+  .screen1 {
+    height: 20rem;
+    bottom: 2.5rem;
+    width: 14rem;
+    right: 4.4rem;
+  }
+  .cover2 {
+    bottom: 0;
+    right: 13rem;
+  }
+  .screen2 {
+    height: 19rem;
+    bottom: 0.5rem;
+    right: 13.5rem;
+    width: 14rem;
+  }
+
+  .get-app-inputs > h1 {
+    font-size: 2.5rem;
+  }
+
+  .play-stores > img {
+    width: 10rem;
+  }
+  .get-the-app-container {
+    padding: 0;
+    height: 29rem;
+    gap: 0.5rem;
+  }
+  .sms-container > input {
+    width: 16rem;
+  }
+
+  .sms-container > button {
+    width: 7rem;
+
+    font-size: medium;
+  }
+
+  .arrow {
+    width: 2.5rem;
+    top: 27%;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .mobile {
+    width: 12rem;
+  }
+
+  .cover1 {
+    bottom: 0;
+    right: 3rem;
+  }
+  .screen1 {
+    height: 16rem;
+    bottom: 2.1rem;
+    width: 11rem;
+    right: 3.4rem;
+  }
+  .cover2 {
+    bottom: 0;
+    right: 10rem;
+  }
+  .screen2 {
+    height: 16rem;
+    bottom: 0rem;
+    right: 10.3rem;
+    width: 11rem;
+  }
+
+  .get-app-inputs > h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .get-the-app-container {
+    height: 24rem;
+  }
+
+  .arrow {
+    width: 2rem;
+    top: 27%;
+  }
+
+  .sms-container > input {
+    padding: 0.6rem 0 0.6rem 3rem;
+    font-size: small;
+  }
+
+  .sms-container > span {
+    font-size: small;
+  }
+
+  .sms-container > button {
+    width: 5rem;
+    height: 2.2rem;
+    font-size: small;
+  }
+
+  .play-stores > img {
+    width: 8rem;
+  }
+
+  .play-stores {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .mobile {
+    width: 9rem;
+  }
+
+  .get-app-inputs > h1 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+
+  .link-container > p {
+    font-size: small;
+  }
+
+  .play-stores > img {
+    width: 6rem;
+  }
+
+  .cover1 {
+    bottom: 0;
+    right: 1.7rem;
+  }
+  .screen1 {
+    height: 14rem;
+    bottom: 0rem;
+    width: 8.2rem;
+    right: 2rem;
+  }
+  .cover2 {
+    bottom: 0;
+    right: 6rem;
+  }
+  .screen2 {
+    height: 11.7rem;
+    bottom: 0rem;
+    right: 6.3rem;
+    width: 8.2rem;
+  }
+  .get-the-app-container {
+    height: 18rem;
+  }
+
+  .arrow {
+    width: 1.2rem;
+    top: 35%;
+  }
+
+  .sms-container > button {
+    display: none;
+  }
+
+  .sms-container > input {
+    width: 100%;
+  }
+
+  .mobile-button {
+    display: block;
+    width: 100%;
+    height: 1.8rem;
+    border-radius: 2px;
+    background: #2aa8ff;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  .play-stores {
+    bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .get-the-app-container {
+    height: 16rem;
+  }
+
+  .mobile {
+    width: 7rem;
+  }
+
+  .cover1 {
+    bottom: 0;
+    right: 1.7rem;
+  }
+  .screen1 {
+    height: 11rem;
+    bottom: 0rem;
+    width: 6.5rem;
+    right: 1.8rem;
+  }
+  .cover2 {
+    bottom: 0;
+    right: 5rem;
+  }
+  .screen2 {
+    height: 9rem;
+    bottom: 0rem;
+    right: 5.2rem;
+    width: 6.5rem;
+  }
+
+  .get-app-inputs > h1 {
+    font-size: large;
+    line-height: 1.3rem;
+  }
+  .link-container > p {
+    font-size: x-small;
+  }
+
+  .sms-container > span {
+    font-size: x-small;
+  }
+
+  .sms-container > input {
+    padding: 0.3rem 0 0.3rem 2rem;
+    font-size: x-small;
+  }
+
+  .mobile-button {
+    height: 1.5rem;
+    font-size: x-small;
+  }
+
+  .play-stores {
+    gap: 0.5rem;
+  }
+  .play-stores > img {
+    width: 5rem;
+  }
+
+  .play-stores {
+    bottom: 5%;
+  }
 }

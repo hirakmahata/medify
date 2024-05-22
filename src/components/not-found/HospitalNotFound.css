@@ -10,3 +10,14 @@
   font-weight: 500;
   color: #2aa7ff;
 }
+
+@media screen and (max-width: 541px) {
+  .hospital-notfound-container {
+    font-size: x-large;
+  }
+}
+@media screen and (max-width: 431px) {
+  .hospital-notfound-container {
+    font-size: large;
+  }
+}

@@ -205,3 +205,9 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 431px) {
+  .navbar-container {
+    padding: 1rem 1rem;
+  }
+}

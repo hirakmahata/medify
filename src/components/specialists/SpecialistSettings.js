@@ -119,5 +119,38 @@ export const settings = {
         centerPadding: "10px",
       },
     },
+    {
+      breakpoint: 431,
+      settings: {
+        slidesToShow: 2,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "70px",
+      },
+    },
+    {
+      breakpoint: 391,
+      settings: {
+        slidesToShow: 2,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "50px",
+      },
+    },
+    {
+      breakpoint: 361,
+      settings: {
+        slidesToShow: 2,
+        infinite: true,
+        dots: true,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "30px",
+      },
+    },
   ],
 };

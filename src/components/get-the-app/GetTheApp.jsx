@@ -12,10 +12,10 @@ const GetTheApp = () => {
   return (
     <div className="get-the-app-container">
       <div className="get-app-images">
-        <img src={mobileCover1} alt="cover1" className="cover1" />
-        <img src={mobileScreen1} alt="screen1" className="screen1" />
-        <img src={mobileCover2} alt="cover2" className="cover2" />
-        <img src={mobileScreen2} alt="screen2" className="screen2" />
+        <img src={mobileCover1} alt="cover1" className="cover1 mobile" />
+        <img src={mobileScreen1} alt="screen1" className="screen1 mobile" />
+        <img src={mobileCover2} alt="cover2" className="cover2 mobile" />
+        <img src={mobileScreen2} alt="screen2" className="screen2 mobile" />
         <img src={arrow} alt="arrow" className="arrow" />
       </div>
       <div className="get-app-inputs">
@@ -29,6 +29,7 @@ const GetTheApp = () => {
             <input placeholder="Enter phone number" />
             <button>Send SMS</button>
           </div>
+          <button className="mobile-button">Send SMS</button>
         </div>
         <div className="play-stores">
           <img src={googlePlay} alt="" />

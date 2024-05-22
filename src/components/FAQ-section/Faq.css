@@ -222,6 +222,10 @@
     width: 100%;
     padding-right: 1rem;
   }
+
+  .faq-container {
+    height: 30rem;
+  }
 }
 
 @media screen and (max-width: 930px) {
@@ -265,5 +269,37 @@
 
   .happy-patients-number {
     left: calc(50% - 15rem);
+  }
+
+  .faq-container {
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .faq-heading > h1 {
+    font-size: x-large;
+  }
+
+  .faq-heading > p {
+    font-size: medium;
+  }
+
+  .happy-patients-number {
+    left: calc(50% - 10rem);
+    bottom: 10%;
+  }
+
+  .question > p {
+    font-size: small;
+    font-weight: 500;
+  }
+  .question > svg {
+    width: 0.8rem;
+  }
+
+  .questions {
+    height: unset;
+    gap: 1.5rem;
   }
 }

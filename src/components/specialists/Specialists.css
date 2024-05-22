@@ -175,3 +175,10 @@
     width: 8rem;
   }
 }
+
+@media screen and (max-width: 431px) {
+  .doctor-heading {
+    font-size: x-large;
+    margin: 0;
+  }
+}

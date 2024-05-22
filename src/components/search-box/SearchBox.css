@@ -274,3 +274,29 @@
     font-size: x-small;
   }
 }
+
+@media screen and (max-width: 431px) {
+  .search-box-container {
+    top: 18rem;
+    border-radius: 5px;
+  }
+
+  .search-button > svg {
+    transform: translateX(35vw);
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .search-box-container {
+    top: 19rem;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .search-box-container {
+    top: 21rem;
+  }
+  .search-button > svg {
+    transform: translateX(32vw);
+  }
+}

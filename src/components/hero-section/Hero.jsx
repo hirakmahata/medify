@@ -1,7 +1,11 @@
 import "./Hero.css";
+import { useNavigate } from "react-router-dom";
+
 import heroImage from "../../assets/hero-images/heroImage.png";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="hero-container">
       <div className="hero-text-button">
@@ -15,7 +19,7 @@ const Hero = () => {
           visit a particular doctor.
         </div>
         <div className="hero-button">
-          <button>Find Centers</button>
+          <button onClick={() => navigate("/search")}>Find Centers</button>
         </div>
       </div>
       <div className="hero-image">

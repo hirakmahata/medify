@@ -2,6 +2,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import "./Calender.css";
 import { useSnackbar } from "notistack";
 import {
+  addMyBookingToLocalStorage,
   generateTimeArray,
   getDateFromString,
   getNextSevenDays,
@@ -108,6 +109,7 @@ const Calender = ({
     };
 
     dispatch(addBooking(newBooking));
+    addMyBookingToLocalStorage("my-bookings", newBooking);
 
     enqueueSnackbar(
       "Your Appointment is Booked Successfully. Check MyBookings for more Details",
