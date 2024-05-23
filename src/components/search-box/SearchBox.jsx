@@ -64,8 +64,8 @@ const SearchBox = () => {
   const { data: states, error: statesError } = useFetchStatesQuery();
 
   const [searchClicked, setSearchClicked] = useState(false);
-  const selectedState = useSelector((state) => state.selectedState);
-  const selectedCity = useSelector((state) => state.selectedCity);
+  const selectedState = useSelector((state) => state.S.selectedState);
+  const selectedCity = useSelector((state) => state.S.selectedCity);
 
   const { data: cities, error: citiesError } = useFetchCitiesQuery(
     selectedState?.value,
