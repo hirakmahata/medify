@@ -56,6 +56,9 @@ const SearchDetailHeader = ({ setIsLoading, setAlreadySearched }) => {
   const selectedState = useSelector((state) => state.selectedState);
   const selectedCity = useSelector((state) => state.selectedCity);
 
+  const allState = useSelector((state) => state);
+  console.log("checking the reducer location..", allState);
+
   const { data: cities, error: citiesError } = useFetchCitiesQuery(
     selectedState?.value,
     {

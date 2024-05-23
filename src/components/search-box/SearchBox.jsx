@@ -86,6 +86,10 @@ const SearchBox = () => {
     }
   );
 
+  const allState = useSelector((state) => state);
+  console.log("checking the reducer location..", allState);
+  console.log("check selectedState", selectedState);
+
   const handleStateChange = (selectedOption) => {
     dispatch(setSelectedState(selectedOption));
     dispatch(setSelectedCity(null));
