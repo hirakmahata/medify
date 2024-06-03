@@ -290,6 +290,10 @@
     bottom: 10%;
   }
 
+  .question {
+    padding: 0 0.5rem;
+  }
+
   .question > p {
     font-size: small;
     font-weight: 500;

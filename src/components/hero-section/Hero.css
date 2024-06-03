@@ -152,56 +152,99 @@
 }
 
 @media screen and (max-width: 632px) {
+  .hero-container {
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 20rem;
+  }
+  .hero-text-button,
+  .hero-image {
+    width: 100%;
+  }
   .top-hero-text {
-    font-size: small;
+    font-size: larger;
   }
   .middle-hero-text > span {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .bottom-hero-text {
-    font-size: x-small;
+    font-size: medium;
   }
 
   .hero-button > button {
-    width: 5rem;
-    height: 2rem;
-    font-size: x-small;
+    width: 9rem;
+    height: 3rem;
+    font-size: large;
   }
 
   .hero-image > img {
-    width: 15rem;
+    width: 25rem;
+    position: absolute;
+    right: 0;
+    top: 8rem;
   }
 }
 
-@media screen and (max-width: 516px) {
+@media screen and (max-width: 590px) {
   .hero-image > img {
-    width: 13rem;
+    width: 24rem;
   }
 }
 
-@media screen and (max-width: 431px) {
-  .hero-container {
-    padding: 0.5rem 0.5rem;
-    padding-bottom: 9rem;
-  }
-
-  .top-hero-text {
-    font-size: x-small;
-  }
-
+@media screen and (max-width: 570px) {
   .middle-hero-text > span {
-    font-size: larger;
+    font-size: 2.3rem;
+  }
+
+  .bottom-hero-text {
+    font-size: small;
+  }
+
+  .hero-image > img {
+    width: 20rem;
+  }
+
+  .hero-container {
+    padding-bottom: 16rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .top-hero-text {
+    font-size: large;
+  }
+  .middle-hero-text > span {
+    font-size: 2rem;
     font-weight: 600;
   }
 
-  .bottom-hero-text {
-    font-size: xx-small;
+  .hero-button > button {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: medium;
+  }
+  .hero-container {
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-image > img {
+    position: static;
   }
 
-  .hero-button > button {
-    border-radius: 4px;
-    width: 7rem;
-    font-size: x-small;
+  .hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .hero-container {
+    gap: 0.5rem;
+  }
+
+  .hero-container {
+    padding-bottom: 5rem;
   }
 }

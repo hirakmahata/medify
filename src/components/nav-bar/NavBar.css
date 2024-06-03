@@ -142,8 +142,9 @@
   .side-bar-menu-container {
     position: absolute;
     right: 0;
+    top: 2.5rem;
     width: 60%;
-    height: 90vh;
+    height: 95vh;
     border-radius: 6px 2px 2px 6px;
     z-index: 2;
     display: flex;
@@ -155,6 +156,7 @@
   .close-sidebar {
     width: 100%;
     align-self: flex-start;
+    background-color: white;
   }
 
   .side-bar-menu {
