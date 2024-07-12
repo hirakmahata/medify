@@ -23,6 +23,7 @@ import {
 } from "../../redux/reducers/reducer";
 import { getOptionByVarient } from "../../utils/DateFunctions";
 import Loader from "../loader/Loader";
+import Skeleton from "../skeleton/Skeleton";
 
 const SearchBox = () => {
   const MORE_INFO = [
@@ -61,7 +62,7 @@ const SearchBox = () => {
   const [active, setActive] = useState(null);
 
   const dispatch = useDispatch();
-  const { data: states, error: statesError } = useFetchStatesQuery();
+  const { data: states, error: statesError, isLoading: stateLoading } = useFetchStatesQuery();
 
   const [searchClicked, setSearchClicked] = useState(false);
   const selectedState = useSelector((state) => state.S.selectedState);
@@ -130,61 +131,64 @@ const SearchBox = () => {
   }, [citiesError, enqueueSnackbar, medicalCentersError, statesError]);
 
   return (
-    <div className="search-box-container">
-      <div className="inputs-button">
-        <div className="inputs">
-          <div className="state">
-            <IoMdSearch size={20} />
-            <Select
-              id="states"
-              value={selectedState}
-              onChange={handleStateChange}
-              options={states?.map((state) => ({ value: state, label: state }))}
-              placeholder="State"
-              isClearable
-              isSearchable
-              noOptionsMessage={() => "No State Found"}
-              styles={STYLES}
-            />
-          </div>
-          <div className="city">
-            <IoMdSearch size={20} />
-            <Select
-              id="cities"
-              value={selectedCity}
-              onChange={handleCityChange}
-              options={cities?.map((city) => ({ value: city, label: city }))}
-              placeholder="City"
-              isClearable
-              isSearchable
-              noOptionsMessage={() => "No City Found"}
-              styles={STYLES}
-              isDisabled={!selectedState}
-            />
-          </div>
-        </div>
-        <div onClick={handleSearch} className="search-button">
-          <IoMdSearch size={20} />
-          <button type="submit">Search</button>
-        </div>
-      </div>
-      <div className="more-section">
-        <div className="search-box-heading">You may be looking for</div>
-        <div className="more">
-          {MORE_INFO.map((info, index) => (
-            <div
-              onClick={() => setActive(index)}
-              key={index}
-              className={`myIcon ${active === index ? "active" : ""}`}
-            >
-              {info.icon}
-              <p>{info.text}</p>
+    <>
+      {stateLoading ? (<Skeleton width="100vw" length={10} />) :
+        (<div className="search-box-container">
+          <div className="inputs-button">
+            <div className="inputs">
+              <div className="state">
+                <IoMdSearch size={20} />
+                <Select
+                  id="states"
+                  value={selectedState}
+                  onChange={handleStateChange}
+                  options={states?.map((state) => ({ value: state, label: state }))}
+                  placeholder="State"
+                  isClearable
+                  isSearchable
+                  noOptionsMessage={() => "No State Found"}
+                  styles={STYLES}
+                />
+              </div>
+              <div className="city">
+                <IoMdSearch size={20} />
+                <Select
+                  id="cities"
+                  value={selectedCity}
+                  onChange={handleCityChange}
+                  options={cities?.map((city) => ({ value: city, label: city }))}
+                  placeholder="City"
+                  isClearable
+                  isSearchable
+                  noOptionsMessage={() => "No City Found"}
+                  styles={STYLES}
+                  isDisabled={!selectedState}
+                />
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
-      {medicalCentersLoading && <Loader />}
-    </div>
+            <div onClick={handleSearch} className="search-button">
+              <IoMdSearch size={20} />
+              <button type="submit">Search</button>
+            </div>
+          </div>
+          <div className="more-section">
+            <div className="search-box-heading">You may be looking for</div>
+            <div className="more">
+              {MORE_INFO.map((info, index) => (
+                <div
+                  onClick={() => setActive(index)}
+                  key={index}
+                  className={`myIcon ${active === index ? "active" : ""}`}
+                >
+                  {info.icon}
+                  <p>{info.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          {medicalCentersLoading && <Loader />}
+        </div>)}
+    </>
   );
 };
 
